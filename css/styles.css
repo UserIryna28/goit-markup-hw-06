@@ -684,7 +684,6 @@ img {
 .footer-form-input-submit {
   display: flex;
   justify-content: center;
-  position: absolute;
 }
 
 .modal-form-input:focus {
@@ -718,10 +717,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-massage {
+  display: block;
   resize: none;
   width: 100%;
   height: 120px;
   padding: 8px 8px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border-color;
   transition-duration: 250ms;
@@ -746,17 +747,26 @@ img {
   content: "";
   margin-right: 8px;
 }
+.modal-form-link {
+  color: #4d5ae5;
+}
 .modal-form-check-desk {
   font-size: 12px;
   line-height: 1.3;
   display: flex;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
+
   margin-top: 20px;
   margin-bottom: 20px;
+  color: #757575;
 }
+
 .modal-form-check:checked + .modal-form-check-desk::before {
   background-color: var(--hover-color);
-  background-image: url(../images/Property.svg);
+  background-image: url(../images/Vector2.svg);
+
+  background-repeat: no-repeat;
 }
 .modal-form-check:focus + .modal-form-check-desk::before {
   border-color: var(--hover-color);
